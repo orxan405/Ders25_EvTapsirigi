@@ -24,7 +24,6 @@ class ServiceViewHolder(
         binding.txtAd.text = dataService.name
         binding.txtSoyadi.text = dataService.username
         binding.txtMail.text = dataService.email
-        binding.btnEtrafli.text = dataService.id.toString()
 
 //        binding.txtVB.text = dataVerticalKino.basliqVertical
 //        binding.txtVI.text = dataVerticalKino.icerikVertical
@@ -32,7 +31,7 @@ class ServiceViewHolder(
 //            .into(binding.IVVertical)
 
 
-        binding.btnEtrafli.setOnClickListener {
+        binding.cView.setOnClickListener {
             navigateToService(dataService)
         }
 

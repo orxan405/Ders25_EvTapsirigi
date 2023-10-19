@@ -23,7 +23,7 @@ class ServiceAdapter(
 
         Log.i("onBindViewHolder", list_V[position].toString())
 
-        holder.binding.btnEtrafli.setOnClickListener {
+        holder.binding.cView.setOnClickListener {
           //  holder.binding.btnEtrafli.setBackgroundColor(Color.DKGRAY)
 
             if (!holder.binding.txtAd.toString().isEmpty() && !holder.binding.txtSoyadi.toString()
@@ -31,8 +31,6 @@ class ServiceAdapter(
             ) {
                 val bundle = Bundle()
                 bundle.putString("data", holder.binding.txtAd.toString())
-
-                holder.binding.btnEtrafli.text = holder.binding.txtAd.text.toString()
             }
         }
 
