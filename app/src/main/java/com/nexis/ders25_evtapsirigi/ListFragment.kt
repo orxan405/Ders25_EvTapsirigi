@@ -98,6 +98,10 @@ class ListFragment : Fragment() {
                     userList = body as ArrayList<UserResponseModel>
                     adapter.updateList(userList)
 
+                    findNavController().navigate(
+                        R.id.action_listFragment_to_detailsFragment
+                    )
+
                 }
             }
 

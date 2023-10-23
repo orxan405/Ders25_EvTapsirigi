@@ -4,6 +4,7 @@ import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.nexis.ders_25_webserivce.remote.UserResponseModel
 
@@ -23,7 +24,7 @@ class ServiceAdapter(
 
         Log.i("onBindViewHolder", list_V[position].toString())
 
-        holder.binding.cView.setOnClickListener {
+        holder.binding.cLayout.setOnClickListener {
           //  holder.binding.btnEtrafli.setBackgroundColor(Color.DKGRAY)
 
             if (!holder.binding.txtAd.toString().isEmpty() && !holder.binding.txtSoyadi.toString()
@@ -31,6 +32,8 @@ class ServiceAdapter(
             ) {
                 val bundle = Bundle()
                 bundle.putString("data", holder.binding.txtAd.toString())
+
+
             }
         }
 

@@ -30,10 +30,13 @@ class ServiceViewHolder(
 //        Glide.with(parent.context).load(dataVerticalKino.sekilVertical).centerCrop()
 //            .into(binding.IVVertical)
 
-
-        binding.cView.setOnClickListener {
+        itemView.setOnClickListener{
             navigateToService(dataService)
         }
+
+//        binding.cView.setOnClickListener {
+//            navigateToService(dataService)
+//        }
 
 
 
